@@ -482,11 +482,13 @@ footer {
     text-align: center;
     color: var(--txt-white);
 }
+
 .address-container .address-inner-container a {
-text-decoration: none;
-color: white;
-font-size: 18px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
+
 /* ---------------------------------------footer Css End------------------------------------------------------ */
 
 
@@ -830,10 +832,12 @@ a .home-about-call-btn {
     justify-content: center;
     flex-wrap: wrap;
 }
-.home-about-inner-text-container .home-about-heading{
+
+.home-about-inner-text-container .home-about-heading {
     max-width: 326px;
     font-weight: normal !important;
 }
+
 .home-portfolio-inner-container .column-1, .home-portfolio-inner-container .column-2 {
     width: calc(50% - 20px);
     display: flex;
@@ -900,9 +904,7 @@ a .home-about-call-btn {
     justify-content: end;
 }
 
-.home-simplicity-text-container h5 span {
-   
-}
+
 
 .home-simplicity-text-container h5 {
     text-align: left;
@@ -1165,7 +1167,7 @@ a .home-about-call-btn {
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
+
 
 }
 
@@ -1224,6 +1226,7 @@ a .home-about-call-btn {
     margin-bottom: 8px;
     color: rgba(155, 129, 84, 1);
 }
+
 .home-contact-form input::placeholder, .home-contact-form textarea::placeholder {
     font-family: var(--font-secondary);
     font-weight: 400;
@@ -1231,6 +1234,7 @@ a .home-about-call-btn {
     line-height: 30px;
     color: var(--txt-white) !important;
 }
+
 .home-contact-form input,
 .home-contact-form select,
 .home-contact-form textarea {
@@ -1249,8 +1253,8 @@ a .home-about-call-btn {
 .home-contact-form .submit-btn {
     font-family: var(--font-secondary);
     font-weight: 700;
-     font-size: 20px;
-     line-height: 18px;
+    font-size: 20px;
+    line-height: 18px;
     width: 100%;
     background: transparent;
     border: 1px solid #000;
@@ -1266,16 +1270,61 @@ a .home-about-call-btn {
 .home-contact-form .submit-btn .line {
     width: 40px;
     height: 1px;
-   background-color: var(--txt-black);
+    background-color: var(--txt-black);
 }
-.home-contact-form .submit-btn:hover{
+
+.home-contact-form .submit-btn:hover {
     background: var(--txt-black);
     color: var(--txt-white);
 }
-.home-contact-form .submit-btn:hover  .line{
-    background-color:var(--txt-white) !important;
+
+.home-contact-form .submit-btn:hover .line {
+    background-color: var(--txt-white) !important;
 }
+
 /* ---------------------------------------Home > contactus- sec- Css end------------------------------------------------------ */
+
+
+/*<---------------------------------------About-Us Page CSS Start------------------------------------------------------> */
+
+/* ---------------------------------------About-Us > Hero-sec CSS Start------------------------------------------------------ */
+
+.about-hero-sec {
+    padding-top: 150px !important;
+    padding-bottom: 100px !important;
+}
+
+.about-hero-conatiner {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-hero-conatiner p b sup {
+    font-family: var(--font-bold);
+    font-size: 100px;
+    font-weight: 800 !important;
+    line-height: 70px;
+    top: -80px;
+    position: relative;
+    text-transform: none !important;
+}
+
+.about-hero-conatiner p {
+    font-family: var(--font-primary) !important;
+    font-weight: 400 !important;
+    font-size: 79px !important;
+    line-height: 70px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-hero-conatiner img {
+    height: 501px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* ---------------------------------------About-Us > Hero-sec CSS End------------------------------------------------------ */
 
 
 /* ---------------------------------------Media Query------------------------------------------------------ */
@@ -1286,7 +1335,19 @@ a .home-about-call-btn {
         max-width: 96px;
         width: 100%;
     }
+
+
 }
+
+@media only screen and (max-width: 1300px) {
+    .about-hero-conatiner p {
+        font-size: 50px !important;
+        line-height: 60px !important;
+        text-align: center;
+    }
+}
+
+
 
 @media screen and (max-width:1024px) {
 
@@ -1531,18 +1592,21 @@ a .home-about-call-btn {
     .home-about-inner-text-container a .btn-container span {
         height: 2PX !important;
     }
-.home-about-inner-text-container .home-about-heading{
-    font-size: 35px !important;
-    line-height: 40px !important;
-}
+
+    .home-about-inner-text-container .home-about-heading {
+        font-size: 35px !important;
+        line-height: 40px !important;
+    }
+
     /* ---------------------------------------Home > about  - sec- Css end------------------------------------------------------ */
-   
+
 
     /* ---------------------------------------Home > Simplicity - sec- Css start------------------------------------------------------ */
 
- .home-portfolio-heading-container {
+    .home-portfolio-heading-container {
         padding-left: 10px;
     }
+
     .home-simplicity-sec {
         padding: 0px 20px !important;
     }
@@ -1618,19 +1682,45 @@ a .home-about-call-btn {
 
     /* ---------------------------------------Home > contact- sec- Css start------------------------------------------------------ */
 
-.home-contact-sec {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
+    .home-contact-sec {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 
-.home-contact-form-heading-container h2, .home-contact-form-heading-container h2 span{
-    font-size: 35px !important;
-    line-height: 40px !important;
-}
+    .home-contact-form-heading-container h2, .home-contact-form-heading-container h2 span {
+        font-size: 35px !important;
+        line-height: 40px !important;
+    }
 
 
     /* ---------------------------------------Home > contact- sec- Css end------------------------------------------------------ */
 
+    /*<---------------------------------------About-Us Page CSS Start------------------------------------------------------> */
+
+
+    /* ---------------------------------------About-Us > Hero-sec CSS Start------------------------------------------------------ */
+
+    .about-hero-sec {
+        padding-top: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .about-hero-conatiner p {
+        font-size: 40px !important;
+        padding-bottom: 50px !important;
+    }
+
+    .about-hero-conatiner p b sup {
+        font-size: 50px !important;
+        top: 15px !important;
+        right: 15px !important;
+    }
+
+    .about-hero-conatiner img {
+        height: 450px !important;
+    }
+
+    /* ---------------------------------------About-Us > Hero-sec CSS End------------------------------------------------------ */
 
 
 }
@@ -1759,9 +1849,10 @@ a .home-about-call-btn {
 
     /* ---------------------------------------Home > Services - sec- Css Start------------------------------------------------------ */
 
-    .home-hero-sec{
+    .home-hero-sec {
         height: 450px !important;
     }
+
     .home-services-sec .services-container {
         gap: 20px !important;
         padding-left: 10px !important;
@@ -1980,16 +2071,47 @@ a .home-about-call-btn {
 
     /* ---------------------------------------Home > contact- sec- Css start------------------------------------------------------ */
 
-.home-contact-form-heading-container h2, .home-contact-form-heading-container h2 span{
-    line-height: 30px !important;
-    font-size: 24px !important;
-    text-align: center;
-}
+    .home-contact-form-heading-container h2, .home-contact-form-heading-container h2 span {
+        line-height: 30px !important;
+        font-size: 24px !important;
+        text-align: center;
+    }
 
-.home-contact-form .form-group{
-    width: 100%;
-}
+    .home-contact-form .form-group {
+        width: 100%;
+    }
+
     /* ---------------------------------------Home > contact- sec- Css end------------------------------------------------------ */
+
+
+
+
+    /* ---------------------------------------About-Us page CSS Start------------------------------------------------------ */
+
+
+
+
+    /* ---------------------------------------About-Us > Hero-sec CSS Start------------------------------------------------------ */
+
+    .about-hero-sec {
+        padding-top: 20px !important;
+    }
+
+    .about-hero-conatiner p {
+        padding-bottom: 20px !important;
+        line-height: 50px !important;
+    }
+
+    .about-hero-conatiner img {
+        height: 200px !important;
+    }
+
+
+
+
+
+    /* ---------------------------------------About-Us > Hero-sec CSS Start------------------------------------------------------ */
+
 
 
 }
