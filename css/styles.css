@@ -2,12 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 @import 'animate.css';
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap');
 
 @font-face {
     font-family: 'Proxima Nova';
     src: url(/fonts/Fontspring-DEMO-proximanova-extrabold.otf);
     font-weight: 800;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Hebrew Regular';
+    src: url(/fonts/Open\ Sans\ Hebrew\ Regular.ttf);
+    font-weight: 700;
+    font-style: bold;
 }
 
 /*------ Global Style ----------*/
@@ -1327,6 +1335,171 @@ a .home-about-call-btn {
 /* ---------------------------------------About-Us > Hero-sec CSS End------------------------------------------------------ */
 
 
+/* ---------------------------------------About-Us > about-sec CSS start------------------------------------------------------ */
+
+.about-about-sec {
+    padding-top: 20px !important;
+}
+
+.about-about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.about-about-container .about-text-container {
+    width: calc(50% - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.about-about-container .about-text-container p {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 18px !important;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.about-about-container .about-text-container .span-bold {
+    font-size: 55px !important;
+    line-height: 85px !important;
+}
+
+.about-about-container .about-text-container .about-inner-text-container {
+    padding-left: 68px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.about-about-container .about-text-container .about-inner-text-container h4 {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 85px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.about-text-container .about-inner-text-container p {
+    font-family: 'Open Sans Hebrew', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    text-align: justify;
+    text-transform: none;
+    padding-bottom: 20px;
+}
+
+.about-text-container .about-inner-text-container h6 {
+    font-family: 'Open Sans Hebrew', sans-serif !important;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    text-align: justify;
+    text-transform: lowercase;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.9333);
+}
+
+.about-text-container .about-inner-text-container .about-inner-text-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.about-text-container .about-inner-text-container .about-inner-count-text-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.about-text-container .about-inner-text-container .about-inner-count-text-container p {
+    font-family: "Big Shoulders Inline", sans-serif !important;
+    font-weight: 400;
+    font-size: 200px !important;
+    line-height: 160px !important;
+    padding-bottom: 0px !important;
+}
+
+.about-inner-count-text-row-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-inner-count-text-row-container h5 {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 18px !important;
+    text-transform: capitalize;
+
+}
+
+.about-inner-count-text-container .about-inner-count-text-row-container h6 {
+    font-family: var(--font-primary) !important;
+    font-weight: 400 !important;
+    font-size: 50px !important;
+    line-height: 50px !important;
+    text-transform: capitalize;
+}
+
+.about-about-container img {
+    width: calc(50% - 70px);
+}
+
+
+
+/* ---------------------------------------About-Us > about-sec CSS End------------------------------------------------------ */
+
+
+/* ---------------------------------------About-Us > Team-sec CSS start------------------------------------------------------ */
+
+
+.about-team-container{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.about-team-container h2 .span-bold{
+    font-size: 55px !important;
+    line-height: 50px !important;
+    text-transform: none;
+}
+
+.about-team-container h2{
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 55px !important;
+    line-height: 50px !important;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------About-Us > Team-sec CSS End------------------------------------------------------ */
+
+
 /* ---------------------------------------Media Query------------------------------------------------------ */
 
 
@@ -1427,7 +1600,7 @@ a .home-about-call-btn {
         width: 100%;
         flex-direction: column;
         overflow-y: auto;
-
+height: auto;
         padding-top: 80px;
     }
 
@@ -1722,6 +1895,54 @@ a .home-about-call-btn {
 
     /* ---------------------------------------About-Us > Hero-sec CSS End------------------------------------------------------ */
 
+    /* ---------------------------------------About-Us > about-sec CSS start------------------------------------------------------ */
+
+    .about-about-sec {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .about-about-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .about-about-container .about-text-container {
+        width: 100%;
+    }
+
+    .about-about-container img {
+        width: 80%;
+    }
+
+    .about-about-container .about-text-container p {
+        font-size: 18px !important;
+    }
+
+    .about-about-container .about-text-container .span-bold {
+        font-size: 50px !important;
+        line-height: 55px !important;
+    }
+
+    .about-text-container .about-inner-text-container h4 {
+        font-size: 50px !important;
+        line-height: 55px !important;
+    }
+
+    .about-about-container .about-text-container .about-inner-text-container p {
+        font-size: 16px !important;
+    }
+
+    .about-text-container .about-inner-text-container .about-inner-count-text-container p {
+        font-size: 100px !important;
+    }
+
+    .about-inner-count-text-container .about-inner-count-text-row-container h6 {
+        padding-bottom: 0px !important;
+        font-size: 40px !important;
+    }
+
+    /* ---------------------------------------About-Us > about-sec CSS end------------------------------------------------------ */
 
 }
 
@@ -2095,6 +2316,8 @@ a .home-about-call-btn {
 
     .about-hero-sec {
         padding-top: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 
     .about-hero-conatiner p {
@@ -2112,6 +2335,39 @@ a .home-about-call-btn {
 
     /* ---------------------------------------About-Us > Hero-sec CSS Start------------------------------------------------------ */
 
+    /* ---------------------------------------About-Us > about-sec CSS start------------------------------------------------------ */
 
+.about-about-sec{
+    padding-top: 0px !important;
+}
+.about-about-container img{
+    width: 100%;
+}
+.about-about-container .about-text-container .about-inner-text-container{
+    padding-left: unset !important;
+    padding-top: unset !important;
+}
+.about-about-container .about-text-container p{
+    font-size: 16px !important;
+}
+.about-about-container .about-text-container .span-bold{
+    font-size: 35px !important;
+}
+.about-about-container .about-text-container .about-inner-text-container h4{
+     font-size: 35px !important;
+     padding-bottom: unset !important;
+}
+.about-text-container .about-inner-text-container h6{
+    padding-bottom: unset !important;
+}
+.about-about-container .about-text-container{
+    align-items: unset;
+}
+.about-text-container .about-inner-text-container .about-inner-count-text-container{
+    flex-direction: column;
+    gap: unset;
+    align-items: start;
+}
+    /* ---------------------------------------About-Us > about-sec CSS end------------------------------------------------------ */
 
 }
