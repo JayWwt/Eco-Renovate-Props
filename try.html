@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flex Layout</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f8f8f8;
+        padding: 40px;
+    }
+
+    /* MAIN WRAPPER */
+    .featured-section {
+        display: flex;
+        gap: 30px;
+        align-items: stretch;     /* make right box match height */
+    }
+
+    /* LEFT SIDE FLEX WRAPPER */
+    .projects-container {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    /* EACH PROJECT BOX */
+    .project-card {
+        width: calc(33.333% - 20px); /* 3 per row */
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .project-card img {
+        width: 100%;
+        border-radius: 6px;
+        display: block;
+    }
+
+    .project-card p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    /* RIGHT GREY BOX */
+    .right-bar {
+        width: 260px;
+        background: #e6e6e6;
+        padding: 20px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-bar h3 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .right-bar button {
+        margin-top: 20px;
+        padding: 12px 24px;
+        border: none;
+        background: #000;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* ---------------------- RESPONSIVE ---------------------- */
+
+    /* TABLET: 2 per row */
+    @media (max-width: 992px) {
+        .project-card {
+            width: calc(50% - 20px);
+        }
+    }
+
+    /* MOBILE: 1 per row + sidebar goes below */
+    @media (max-width: 768px) {
+        .featured-section {
+            flex-direction: column;
+        }
+
+        .right-bar {
+            width: 100%;
+        }
+
+        .project-card {
+            width: 100%;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<section class="featured-section">
+
+    <!-- LEFT SIDE PROJECTS -->
+    <div class="projects-container">
+        <div class="project-card"><img src="https://picsum.photos/300/200" /><p>Project 1</p></div>
+        <div class="project-card"><img src="https://picsum.photos/301/200" /><p>Project 2</p></div>
+        <div class="project-card"><img src="https://picsum.photos/302/200" /><p>Project 3</p></div>
+
+        <div class="project-card"><img src="https://picsum.photos/303/200" /><p>Project 4</p></div>
+        <div class="project-card"><img src="https://picsum.photos/304/200" /><p>Project 5</p></div>
+        <div class="project-card"><img src="https://picsum.photos/305/200" /><p>Project 6</p></div>
+
+        <!-- Add more → right bar auto-increases height -->
+    </div>
+
+    <!-- RIGHT SIDE GREY BOX -->
+    <aside class="right-bar">
+        <div>
+            <h3>LOOKING TO<br>BEGIN A PROJECT</h3>
+            <button>CONTACT</button>
+        </div>
+    </aside>
+
+</section>
+
+</body>
+</html>
