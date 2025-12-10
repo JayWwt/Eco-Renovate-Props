@@ -27,3 +27,12 @@ document.querySelectorAll(".menu-card").forEach(card => {
 });
 
 
+
+toggle.addEventListener("click", () => {
+  toggle.classList.toggle("active");
+});
+
+
+document.getElementById("menuToggle").onclick = function () {
+  this.classList.toggle("active");
+};
